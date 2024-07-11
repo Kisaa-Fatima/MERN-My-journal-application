@@ -6,7 +6,6 @@ ScribbleMe is a journal-based application built using the MERN (MongoDB, Express
 
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Installation](#installation)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
 - [Database Models](#database-models)

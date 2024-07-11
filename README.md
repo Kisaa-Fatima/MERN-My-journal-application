@@ -11,8 +11,6 @@ ScribbleMe is a journal-based application built using the MERN (MongoDB, Express
 - [API Endpoints](#api-endpoints)
 - [Database Models](#database-models)
 - [Client Components](#client-components)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
@@ -44,43 +42,43 @@ ScribbleMe is a journal-based application built using the MERN (MongoDB, Express
   - Rich text editor (React Quill)
   - date-fns
 
-API Endpoints
-User Routes
-POST /register: Register a new user
-POST /login: Log in an existing user
-GET /profile: Get the profile of the logged-in user
-POST /logout: Log out the current user
-Post Routes
-POST /post: Create a new post
-PUT /post: Update an existing post
-GET /post: Retrieve a list of posts (supports pagination and sorting)
-GET /post/:id: Retrieve a single post by its ID
-Database Models
-User Model (api/models/User.js)
-username: A string representing the username of the user (required, unique, min length 4)
-password: A string representing the password of the user (required)
-Post Model (api/models/Post.js)
-title: The title of the post (string, required)
-summary: A brief description of the post (string)
-content: The main content of the post (string, required)
-cover: The path or URL to the cover image of the post (string)
-author: A reference to the User model (Schema.Types.ObjectId)
-timestamps: Automatically adds createdAt and updatedAt fields
-Client Components
-App.js
-Sets up routing and context provider for user authentication
-Defines routes for viewing and editing posts
-Header.js
-Displays navigation links
-Shows links for creating a new post, logging in, registering, and logging out
-Displays the username of the logged-in user
-Post.js
-Displays individual posts with title, summary, cover image, author, and creation date
-CreatePost.js
-Form for creating a new post with title, summary, content, and file upload
-IndexPage.js
-Fetches and displays a list of posts on the index page
-Login.js
-Form for logging in a user
-UserContext.js
-Manages user information and authentication state across the application
+## API Endpoints
+**User Routes**
+-POST /register: Register a new user
+-POST /login: Log in an existing user
+-GET /profile: Get the profile of the logged-in user
+-POST /logout: Log out the current user
+**Post Routes**
+-POST /post: Create a new post
+-PUT /post: Update an existing post
+-GET /post: Retrieve a list of posts (supports pagination and sorting)
+-GET /post/:id: Retrieve a single post by its ID
+## Database Models
+**User Model (api/models/User.js)**
+-username: A string representing the username of the user (required, unique, min length 4)
+-password: A string representing the password of the user (required)
+**Post Model (api/models/Post.js)**
+-title: The title of the post (string, required)
+-summary: A brief description of the post (string)
+-content: The main content of the post (string, required)
+-cover: The path or URL to the cover image of the post (string)
+-author: A reference to the User model (Schema.Types.ObjectId)
+-timestamps: Automatically adds createdAt and updatedAt fields
+## Client Components
+**App.js**
+-Sets up routing and context provider for user authentication
+-Defines routes for viewing and editing posts
+**Header.js**
+-Displays navigation links
+-Shows links for creating a new post, logging in, registering, and logging out
+-Displays the username of the logged-in user
+**Post.js**
+-Displays individual posts with title, summary, cover image, author, and creation date
+**CreatePost.js**
+-Form for creating a new post with title, summary, content, and file upload
+**IndexPage.js**
+-Fetches and displays a list of posts on the index page
+**Login.js**
+-Form for logging in a user
+**UserContext.js**
+-Manages user information and authentication state across the application
